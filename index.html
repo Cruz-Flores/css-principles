@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>css principles</title>
+  <!-- esto es css interno-->
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    /*selector universal*/
+    * {
+      color: red
+    }
+
+    /*selectores de tipo*/
+    p {
+      color: blue
+    }
+
+    h1 {
+      color: pink;
+      font-family: 'Monaco'
+    }
+
+    h2 {
+      color: greenyellow
+    }
+
+    /*selector de clase*/
+    .texto-de-advertencia {
+      background-color: blueviolet;
+    }
+
+    /*selector de id*/
+    /*solo debe existir un id*/
+    #mi-parrafo {
+      color: green
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="texto-de-advertencia">css principles</h1>
+  <div>
+    <p>soy un parrafo</p>
+  </div>
+
+  <div>
+    <h2>aqui hay un h2 dentro de un div</h2>
+    <p> aqui hay otro parrafo</p>
+  </div>
+
+  <div>
+    <p id="mi-parrafo">aqui hay una lista</p>
+    <ul class="texto-de-advertencia">
+      <!-- esto es estilo en linea-->
+      <li style="color: black;">primer elento</li>
+      <li class="texto-de-muestra">segundo elemento</li>
+      <li>tercer elemento</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
